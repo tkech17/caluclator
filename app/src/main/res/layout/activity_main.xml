@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -32,6 +33,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/switch_to_light_theme"
+        android:textColor="@color/light_yellow"
         app:layout_constraintBottom_toTopOf="@+id/activity_main_input_field_top_guideline"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -42,6 +44,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center_vertical|right"
+        android:background="@color/dark_grey"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/activity_main_result_input_field_top_guideline"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -54,6 +58,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center_vertical|right"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/activity_main_result_field_bottom_guideline"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
