@@ -8,6 +8,8 @@
     </style>
 
     <style name="GridButtonStyle" parent="TextAppearance.AppCompat.Button">
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
         <item name="android:background">@drawable/rounded_shape</item>
         <item name="android:layout_margin">5dp</item>
     </style>
