@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/activity_main_input_field_top_guideline"
@@ -67,6 +67,7 @@
         tools:text="16,400" />
 
     <ge.edu.freeuni.calculator.ui.customview.CalculatorKeyboard
+        android:id="@+id/activity_main_calculator_keyboard"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

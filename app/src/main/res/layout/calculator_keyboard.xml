@@ -1,158 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:columnCount="4"
-        android:background="@color/black"
-        android:rowCount="5">
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:columnCount="4"
+    android:rowCount="5">
 
 
-        <Button
-            android:id="@+id/calculator_keyboard_AC"
-            android:layout_row="0"
-            android:layout_column="0"
-            style="@style/GridButtonStyle"
-            android:textColor="@color/light_green"
-            android:text="@string/ac" />
+    <Button
+        android:id="@+id/calculator_keyboard_AC"
+        style="@style/GridButtonStyle"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:text="@string/ac"
+        android:textColor="@color/light_green" />
 
-        <Button
-            android:layout_row="0"
-            android:layout_column="1"
-            style="@style/GridButtonStyle"
-            android:textColor="@color/light_green"
-            android:text="@string/plus_minus" />
+    <Button
+        android:id="@+id/calculator_keyboard_plus_minus"
+        style="@style/GridButtonStyle"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:text="@string/plus_minus"
+        android:textColor="@color/light_green" />
 
-        <Button
-            android:layout_row="0"
-            android:layout_column="2"
-            style="@style/GridButtonStyle"
-            android:textColor="@color/light_green"
-            android:text="@string/percentage" />
+    <Button
+        android:id="@+id/calculator_keyboard_percentage"
+        style="@style/GridButtonStyle"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:text="@string/percentage"
+        android:textColor="@color/light_green" />
 
-        <Button
-            android:id="@+id/calculator_keyboard_divide"
-            android:layout_row="0"
-            android:layout_column="3"
-            style="@style/GridButtonStyle"
-            android:text="@string/divide"
-            android:textColor="@color/dark_yellow" />
+    <Button
+        android:id="@+id/calculator_keyboard_divide"
+        style="@style/GridButtonStyle"
+        android:layout_row="0"
+        android:layout_column="3"
+        android:text="@string/divide"
+        android:textColor="@color/dark_yellow" />
 
-        <Button
-            android:id="@+id/calculator_keyboard_7"
-            android:layout_row="1"
-            style="@style/GridButtonStyle"
-            android:layout_column="0"
-            android:text="@string/seven" />
+    <Button
+        android:id="@+id/calculator_keyboard_7"
+        style="@style/GridButtonStyle"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:text="@string/seven" />
 
-        <Button
-            android:id="@+id/calculator_keyboard_8"
-            android:layout_row="1"
-            style="@style/GridButtonStyle"
-            android:layout_column="1"
-            android:text="@string/eight" />
+    <Button
+        android:id="@+id/calculator_keyboard_8"
+        style="@style/GridButtonStyle"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:text="@string/eight" />
 
-        <Button
-            android:id="@+id/calculator_keyboard_9"
-            android:layout_row="1"
-            android:layout_column="2"
-            style="@style/GridButtonStyle"
-            android:text="@string/nine" />
+    <Button
+        android:id="@+id/calculator_keyboard_9"
+        style="@style/GridButtonStyle"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:text="@string/nine" />
 
-        <Button
-            android:id="@+id/calculator_keyboard_multiply"
-            style="@style/GridButtonStyle"
-            android:layout_column="3"
-            android:layout_row="1"
-            android:text="@string/multiply"
-            android:textColor="@color/dark_yellow" />
+    <Button
+        android:id="@+id/calculator_keyboard_multiply"
+        style="@style/GridButtonStyle"
+        android:layout_row="1"
+        android:layout_column="3"
+        android:text="@string/multiply"
+        android:textColor="@color/dark_yellow" />
 
-                <Button
-                    android:id="@+id/calculator_keyboard_4"
-                    android:layout_row="2"
-                    android:layout_column="0"
-                    style="@style/GridButtonStyle"
-                    android:text="@string/four" />
+    <Button
+        android:id="@+id/calculator_keyboard_4"
+        style="@style/GridButtonStyle"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:text="@string/four" />
 
-                <Button
-                    android:id="@+id/calculator_keyboard_5"
-                    android:layout_row="2"
-                    android:layout_column="1"
-                    style="@style/GridButtonStyle"
-                    android:text="@string/five" />
+    <Button
+        android:id="@+id/calculator_keyboard_5"
+        style="@style/GridButtonStyle"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:text="@string/five" />
 
-                <Button
-                    android:id="@+id/calculator_keyboard_6"
-                    android:layout_row="2"
-                    android:layout_column="2"
-                    style="@style/GridButtonStyle"
-                    android:text="@string/six" />
+    <Button
+        android:id="@+id/calculator_keyboard_6"
+        style="@style/GridButtonStyle"
+        android:layout_row="2"
+        android:layout_column="2"
+        android:text="@string/six" />
 
-                <Button
-                    android:id="@+id/calculator_keyboard_minus"
-                    android:layout_row="2"
-                    style="@style/GridButtonStyle"
-                    android:layout_column="3"
-                    android:textColor="@color/dark_yellow"
-                    android:text="@string/minus" />
+    <Button
+        android:id="@+id/calculator_keyboard_minus"
+        style="@style/GridButtonStyle"
+        android:layout_row="2"
+        android:layout_column="3"
+        android:text="@string/minus"
+        android:textColor="@color/dark_yellow" />
 
-                <Button
-                    android:id="@+id/calculator_keyboard_1"
-                    android:layout_row="3"
-                    android:layout_column="0"
-                    style="@style/GridButtonStyle"
-                    android:text="@string/one" />
+    <Button
+        android:id="@+id/calculator_keyboard_1"
+        style="@style/GridButtonStyle"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:text="@string/one" />
 
-                <Button
-                    android:id="@+id/calculator_keyboard_2"
-                    android:layout_row="3"
-                    style="@style/GridButtonStyle"
-                    android:layout_column="1"
-                    android:text="@string/two" />
+    <Button
+        android:id="@+id/calculator_keyboard_2"
+        style="@style/GridButtonStyle"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:text="@string/two" />
 
-                <Button
-                    android:id="@+id/calculator_keyboard_3"
-                    android:layout_row="3"
-                    android:layout_column="2"
-                    style="@style/GridButtonStyle"
-                    android:text="@string/three" />
+    <Button
+        android:id="@+id/calculator_keyboard_3"
+        style="@style/GridButtonStyle"
+        android:layout_row="3"
+        android:layout_column="2"
+        android:text="@string/three" />
 
-                <Button
-                    android:id="@+id/calculator_keyboard_plus"
-                    android:layout_row="3"
-                    android:layout_column="3"
-                    style="@style/GridButtonStyle"
-                    android:textColor="@color/dark_yellow"
-                    android:text="@string/plus" />
+    <Button
+        android:id="@+id/calculator_keyboard_plus"
+        style="@style/GridButtonStyle"
+        android:layout_row="3"
+        android:layout_column="3"
+        android:text="@string/plus"
+        android:textColor="@color/dark_yellow" />
 
-                <Button
-                    android:id="@+id/calculator_keyboard_0"
-                    android:layout_row="4"
-                    style="@style/GridButtonStyle"
-                    android:layout_column="0"
-                    android:layout_columnSpan="2"
-                    android:layout_gravity="fill_horizontal"
-                    android:text="@string/zero" />
+    <Button
+        android:id="@+id/calculator_keyboard_0"
+        style="@style/GridButtonStyle"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/zero" />
 
-                <Button
-                    android:id="@+id/calculator_keyboard_dot"
-                    android:layout_row="4"
-                    style="@style/GridButtonStyle"
-                    android:layout_column="2"
-                    android:text="@string/dot" />
+    <Button
+        android:id="@+id/calculator_keyboard_dot"
+        style="@style/GridButtonStyle"
+        android:layout_row="4"
+        android:layout_column="2"
+        android:text="@string/dot" />
 
-                <Button
-                    android:id="@+id/calculator_keyboard_evaluate"
-                    android:layout_row="4"
-                    style="@style/GridButtonStyle"
-                    android:layout_column="3"
-                    android:textColor="@color/dark_yellow"
-                    android:text="@string/evaluate" />
+    <Button
+        android:id="@+id/calculator_keyboard_evaluate"
+        style="@style/GridButtonStyle"
+        android:layout_row="4"
+        android:layout_column="3"
+        android:text="@string/evaluate"
+        android:textColor="@color/dark_yellow" />
 
-
-    </GridLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</GridLayout>

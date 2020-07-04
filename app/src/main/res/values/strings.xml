@@ -19,5 +19,5 @@
     <string name="zero">0</string>
     <string name="dot">.</string>
     <string name="evaluate">=</string>
-    <string name="multiply">x</string>
+    <string name="multiply">*</string>
 </resources>
