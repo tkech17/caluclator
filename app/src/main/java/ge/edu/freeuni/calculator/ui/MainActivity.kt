@@ -11,7 +11,6 @@ import ge.edu.freeuni.calculator.ui.customview.CalculatorKeyboard
 
 class MainActivity : AppCompatActivity(), MainScene.View {
 
-
     enum class ThemeStatus {
         LIGHT,
         DARK
@@ -46,6 +45,10 @@ class MainActivity : AppCompatActivity(), MainScene.View {
         themeChanger.setOnClickListener { presenter.themeChanged() }
     }
 
+    private fun addCalculatorKeyboardListeners() {
+        calculatorKeyboard.listenCalculatorEvents(presenter)
+    }
+
     override fun getCurrentTheme(): ThemeStatus {
         return theme
     }
@@ -66,10 +69,6 @@ class MainActivity : AppCompatActivity(), MainScene.View {
             inputField.background = ContextCompat.getDrawable(this, R.color.dark_grey)
             calculatorKeyboard.setTheme(this.applicationContext, theme)
         }
-    }
-
-    private fun addCalculatorKeyboardListeners() {
-        calculatorKeyboard.listenCalculatorEvents(presenter)
     }
 
     override fun setEvaluatedValue(value: String) {
