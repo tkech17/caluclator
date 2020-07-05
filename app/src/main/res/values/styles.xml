@@ -8,19 +8,27 @@
     </style>
 
     <style name="GridButtonStyle_dark" parent="TextAppearance.AppCompat.Button">
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">25sp</item>
         <item name="android:layout_columnWeight">1</item>
         <item name="android:layout_rowWeight">1</item>
         <item name="android:background">@drawable/button_shape_dark</item>
         <item name="android:layout_margin">5dp</item>
     </style>
 
-    <style name="GridButtonStyle_light" parent="TextAppearance.AppCompat.Button">
-        <item name="android:textSize">22sp</item>
+    <style name="GridButtonStyle_dark_landscape" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">25sp</item>
         <item name="android:layout_columnWeight">1</item>
         <item name="android:layout_rowWeight">1</item>
-        <item name="android:background">@drawable/button_shape_light</item>
-        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/button_shape_dark_landscape</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+
+    <style name="GridButtonStyle_dark_Tablet" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:background">@drawable/button_shape_dark_landscape</item>
+        <item name="android:layout_margin">1dp</item>
     </style>
 
 </resources>

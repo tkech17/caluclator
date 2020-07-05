@@ -1,7 +1,10 @@
 package ge.edu.freeuni.calculator.ui
 
+import android.content.pm.ActivityInfo
+import android.content.res.Configuration
 import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.widget.GridLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -27,7 +30,6 @@ class MainActivity : AppCompatActivity(), MainScene.View {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setTheme(R.style.AppTheme)
         setContentView(R.layout.activity_main)
 
         presenter = mainScenePresenter(this)
@@ -60,6 +62,8 @@ class MainActivity : AppCompatActivity(), MainScene.View {
 
             val drawableColor: Drawable? = ContextCompat.getDrawable(this, R.color.white)
             inputField.background = drawableColor
+            inputField.setTextColor(resources.getColor(R.color.black))
+            resultField.setTextColor(resources.getColor(R.color.black))
             container.background = drawableColor
             calculatorKeyboard.setTheme(this.applicationContext, theme)
 
@@ -67,6 +71,8 @@ class MainActivity : AppCompatActivity(), MainScene.View {
             themeChanger.setTextColor(ContextCompat.getColor(this, R.color.light_yellow))
             container.background = ContextCompat.getDrawable(this, R.color.black)
             inputField.background = ContextCompat.getDrawable(this, R.color.dark_grey)
+            inputField.setTextColor(resources.getColor(R.color.white))
+            resultField.setTextColor(resources.getColor(R.color.white))
             calculatorKeyboard.setTheme(this.applicationContext, theme)
         }
     }

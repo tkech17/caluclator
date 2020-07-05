@@ -50,10 +50,22 @@ class CalculatorKeyboard(context: Context?, attrs: AttributeSet) : GridLayout(co
     fun setTheme(context: Context, theme: MainActivity.ThemeStatus) {
         if (MainActivity.ThemeStatus.DARK == theme) {
             getKeyboardButtons()
-                .forEach { it.background = ContextCompat.getDrawable(context, R.drawable.button_shape_dark) }
+                .forEach {
+                    if (context.resources.configuration.orientation == VERTICAL) {
+                        it.background = ContextCompat.getDrawable(context, R.drawable.button_shape_dark)
+                    } else {
+                        it.background = ContextCompat.getDrawable(context, R.drawable.button_shape_dark_landscape)
+                    }
+                }
         } else {
             getKeyboardButtons()
-                .forEach { it.background = ContextCompat.getDrawable(context, R.drawable.button_shape_light) }
+                .forEach {
+                    if (context.resources.configuration.orientation == VERTICAL) {
+                        it.background = ContextCompat.getDrawable(context, R.drawable.button_shape_white)
+                    } else {
+                        it.background = ContextCompat.getDrawable(context, R.drawable.button_shape_white_landscape)
+                    }
+                }
         }
     }
 
