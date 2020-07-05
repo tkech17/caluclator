@@ -2,7 +2,7 @@ package ge.edu.freeuni.calculator.utils;
 
 import java.util.Stack;
 
-public class EvaluateString {
+public class ArithmeticExpressionEvaluator {
 
     public static double evaluate(String expression) {
         char[] tokens = expression.toCharArray();

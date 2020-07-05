@@ -1,6 +1,6 @@
 package ge.edu.freeuni.calculator.ui
 
-import ge.edu.freeuni.calculator.utils.EvaluateString
+import ge.edu.freeuni.calculator.utils.ArithmeticExpressionEvaluator
 
 class MainScenePresenterImpl(private val view: MainScene.View) : MainScene.Presenter {
 
@@ -69,7 +69,7 @@ class MainScenePresenterImpl(private val view: MainScene.View) : MainScene.Prese
             }
         }
 
-        val result: Double = EvaluateString.evaluate(spacedOperatorsExpr)
+        val result: Double = ArithmeticExpressionEvaluator.evaluate(spacedOperatorsExpr)
 
         if (isWhole(result)) {
             return result.toInt().toString()
