@@ -7,10 +7,19 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="GridButtonStyle" parent="TextAppearance.AppCompat.Button">
+    <style name="GridButtonStyle_dark" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">22sp</item>
         <item name="android:layout_columnWeight">1</item>
         <item name="android:layout_rowWeight">1</item>
-        <item name="android:background">@drawable/rounded_shape</item>
+        <item name="android:background">@drawable/button_shape_dark</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="GridButtonStyle_light" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:background">@drawable/button_shape_light</item>
         <item name="android:layout_margin">5dp</item>
     </style>
 

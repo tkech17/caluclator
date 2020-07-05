@@ -6,6 +6,15 @@ class MainScenePresenterImpl(private val view: MainScene.View) : MainScene.Prese
         view.clearInputField()
     }
 
+    override fun themeChanged() {
+        val themeStatus: MainActivity.ThemeStatus = view.getCurrentTheme()
+        if (themeStatus == MainActivity.ThemeStatus.DARK) {
+            view.setTheme(MainActivity.ThemeStatus.LIGHT)
+        } else {
+            view.setTheme(MainActivity.ThemeStatus.DARK)
+        }
+    }
+
     override fun onNumberOrOperator(value: String) {
         val prevInput: String = view.getInputText()
         val currInput: String = prevInput + value
