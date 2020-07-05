@@ -1,10 +1,7 @@
 package ge.edu.freeuni.calculator.ui
 
-import android.content.pm.ActivityInfo
-import android.content.res.Configuration
 import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.widget.GridLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
